@@ -4,9 +4,29 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>com.lianekai</groupId>
+        <artifactId>spring-all</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <groupId>com.lianekai</groupId>
     <artifactId>spring-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <spring.version>4.3.10.RELEASE</spring.version>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+    </dependencies>
 
 
 </project>
